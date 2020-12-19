@@ -1,7 +1,7 @@
 <?php
 
 
-namespace PhpSquad\NavDirectory\Models;
+namespace PhpSquad\FolderTree\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;

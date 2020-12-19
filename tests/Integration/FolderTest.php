@@ -1,11 +1,11 @@
 <?php
 
-namespace PhpSquad\NavDirectory\Tests\Integration;
+namespace PhpSquad\FolderTree\Tests\Integration;
 
 use Illuminate\Database\Capsule\Manager;
-use PhpSquad\NavDirectory\Repositories\DirectoryRepository;
-use PhpSquad\NavDirectory\Services\Folder;
-use PhpSquad\NavDirectory\Tests\TestDatabase;
+use PhpSquad\FolderTree\Repositories\FolderRepository;
+use PhpSquad\FolderTree\Services\FolderService;
+use PhpSquad\FolderTree\Tests\TestDatabase;
 use PHPUnit\Framework\TestCase;
 
 
@@ -13,7 +13,7 @@ class FolderTest extends TestCase
 {
     use TestBase;
 
-    const NAV_DIRECTORY_TABLE = 'directories';
+    const NAV_DIRECTORY_TABLE = 'folders';
     private Manager $database;
 
     public function setUp(): void
@@ -25,8 +25,8 @@ class FolderTest extends TestCase
 
     public function testCreateDirectory()
     {
-        $directoryRepository = new DirectoryRepository();
-        $directoryCreator = new Folder($directoryRepository);
+        $directoryRepository = new FolderRepository();
+        $directoryCreator = new FolderService($directoryRepository);
         $userId = 'user-one-uuid';
         $icon = 'mdi-folder';
 
@@ -41,8 +41,8 @@ class FolderTest extends TestCase
 
     public function testGetReturnsNestedDirectoriesAndDemonstratesInfiniteRecursion()
     {
-        $directoryRepository = new DirectoryRepository();
-        $navDirectory = new Folder($directoryRepository);
+        $directoryRepository = new FolderRepository();
+        $navDirectory = new FolderService($directoryRepository);
 
         $accountId = 'my-uuid';
         $teamDirName = 'Rocket Team';
@@ -210,8 +210,8 @@ class FolderTest extends TestCase
 
     public function testUpdateWithMoveToDifferentParent()
     {
-        $directoryRepository = new DirectoryRepository();
-        $navDirectory = new Folder($directoryRepository);
+        $directoryRepository = new FolderRepository();
+        $navDirectory = new FolderService($directoryRepository);
 
         $accountId = 'my-uuid';
         $teamDirName = 'Rocket Team';

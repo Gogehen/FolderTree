@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpSquad\NavDirectory\Tests\Integration;
+namespace PhpSquad\FolderTree\Tests\Integration;
 
 use Illuminate\Database\Capsule\Manager;
 use Illuminate\Database\Schema\Blueprint;

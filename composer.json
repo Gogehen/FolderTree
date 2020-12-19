@@ -22,12 +22,12 @@
   },
   "autoload": {
     "psr-4": {
-      "PhpSquad\\NavDirectory\\": "src/"
+      "PhpSquad\\FolderTree\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "PhpSquad\\NavDirectory\\Tests\\": "tests/"
+      "PhpSquad\\FolderTree\\Tests\\": "tests/"
     }
   },
   "extra": {

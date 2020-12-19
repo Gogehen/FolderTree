@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpSquad\NavDirectory\Models;
+namespace PhpSquad\FolderTree\Models;
 
-class Directory extends BaseModel
+class Folder extends BaseModel
 {
     protected $guarded = [];
 

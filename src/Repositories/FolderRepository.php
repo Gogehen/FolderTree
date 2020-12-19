@@ -1,16 +1,16 @@
 <?php
 
-namespace PhpSquad\NavDirectory\Repositories;
+namespace PhpSquad\FolderTree\Repositories;
 
-use PhpSquad\NavDirectory\Models\Directory;
+use PhpSquad\FolderTree\Models\Folder;
 
-class DirectoryRepository
+class FolderRepository
 {
-    public function create(string $accountId, string $userId, ?string $parentId, string $type, string $name, string $icon): Directory
+    public function create(string $accountId, string $userId, ?string $parentId, string $type, string $name, string $icon): Folder
     {
         $parentId = $parentId ? $parentId : 'base_nav_element';
 
-        $dir = new Directory();
+        $dir = new Folder();
         $dir->account_id = $accountId;
         $dir->user_id = $userId;
         $dir->parent_id = $parentId;
@@ -24,7 +24,7 @@ class DirectoryRepository
 
     public function list(string $accountId, string $rootId)
     {
-        return Directory::where('account_id', '=', $accountId)
+        return Folder::where('account_id', '=', $accountId)
             ->where('parent_id', '=', $rootId)
             ->with('children')
             ->get();
@@ -32,7 +32,7 @@ class DirectoryRepository
 
     public function update(string $id, string $accountId, string $userId, ?string $parentId, string $type, string $name, string $icon)
     {
-        $dir = Directory::find($id);
+        $dir = Folder::find($id);
         $dir->account_id = $accountId;
         $dir->user_id = $userId;
         $dir->parent_id = $parentId;

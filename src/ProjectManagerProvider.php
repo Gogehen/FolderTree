@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpSquad\NavDirectory;
+namespace PhpSquad\FolderTree;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDirectoriesTable extends Migration
+class CreateFoldersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateDirectoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('directories', function (Blueprint $table) {
+        Schema::create('folders', function (Blueprint $table) {
             $table->uuid('id')->unique()->primary();
             $table->uuid('account_id');
             $table->uuid('user_id');
@@ -34,6 +34,6 @@ class CreateDirectoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('directories');
+        Schema::dropIfExists('folders');
     }
 }
