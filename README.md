@@ -1,25 +1,25 @@
-# PhpSquad/ProjectManager *Nav-Directory*
+# Gogehen/ProjectManager *Folder-Tree*
 
 >Create and Get Navigation Directory. 
 
 ### Usage
 
 ```shell script
-composer install phpsquad/nav-directory
+composer install gogehen/folder-tree
 ```
 
 #### Example Usage
 
 create a directory
 ```php
-$navDirectory->create($accountId, $userId, $rootId, $type, $name, $icon);
+$folder->create($accountId, $userId, $rootId, $type, $name, $icon);
 ```
 update a directory
 ```php
-$navDirectory->update($accountId, $userId, $rootId, $type, $name, $icon);
+$folder->update($accountId, $userId, $rootId, $type, $name, $icon);
 ```
 
 get List of directories
 ```php
-$navDirectory->list(string $accountId, string $rootId)
+$folder->list(string $accountId, string $rootId)
 ```
