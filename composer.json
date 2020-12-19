@@ -1,0 +1,40 @@
+{
+  "name": "phpsquad/nav-directory",
+  "description": "Creates Directories for ProjectManager",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Richard Rohrig",
+      "email": "richard.t.rohrig@gmail.com"
+    }
+  ],
+  "require": {
+    "illuminate/database": "^7.21",
+    "illuminate/container": "^7.21",
+    "illuminate/contracts": "^7.21",
+    "ramsey/uuid": "^4.0",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "8.5.8",
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "PhpSquad\\NavDirectory\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PhpSquad\\NavDirectory\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PhpSquad\\NavDirectory\\ProjectManagerProvider"
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "5fdf57ee-4d3c-425c-8ebc-de95e08ebed5",
+    "account_id": "my-uuid",
+    "user_id": "user-one-uuid",
+    "type": "team",
+    "name": "Rocket Team",
+    "parent_id": "base_nav_element",
+    "icon": "mdi-folder",
+    "created_at": "2020-07-25T16:04:24.000000Z",
+    "updated_at": "2020-07-25T16:04:24.000000Z",
+    "children": [
+      {
+        "id": "8f753b53-52b8-4c4b-9430-b15802352158",
+        "account_id": "my-uuid",
+        "user_id": "user-one-uuid",
+        "type": "project",
+        "name": "Rocket Project",
+        "parent_id": "5fdf57ee-4d3c-425c-8ebc-de95e08ebed5",
+        "icon": "mdi-folder",
+        "created_at": "2020-07-25T16:04:24.000000Z",
+        "updated_at": "2020-07-25T16:04:24.000000Z",
+        "children": [
+          {
+            "id": "3e4ce108-e52e-46fe-870e-c54b3c2bc05c",
+            "account_id": "my-uuid",
+            "user_id": "user-one-uuid",
+            "type": "folder",
+            "name": "Rocket Folder",
+            "parent_id": "8f753b53-52b8-4c4b-9430-b15802352158",
+            "icon": "mdi-folder",
+            "created_at": "2020-07-25T16:04:24.000000Z",
+            "updated_at": "2020-07-25T16:04:24.000000Z",
+            "children": []
+          },
+          {
+            "id": "5ae88b84-51fb-4407-b983-f1959af4d3b3",
+            "account_id": "my-uuid",
+            "user_id": "user-one-uuid",
+            "type": "folder",
+            "name": "Ship Folder",
+            "parent_id": "8f753b53-52b8-4c4b-9430-b15802352158",
+            "icon": "mdi-folder",
+            "created_at": "2020-07-25T16:04:24.000000Z",
+            "updated_at": "2020-07-25T16:04:24.000000Z",
+            "children": [
+              {
+                "id": "a3c77eb2-c688-4a34-ab81-0c4fc5126a6c",
+                "account_id": "my-uuid",
+                "user_id": "user-one-uuid",
+                "type": "folder",
+                "name": "Sub Ship Folder",
+                "parent_id": "5ae88b84-51fb-4407-b983-f1959af4d3b3",
+                "icon": "mdi-folder",
+                "created_at": "2020-07-25T16:04:24.000000Z",
+                "updated_at": "2020-07-25T16:04:24.000000Z",
+                "children": [
+                  {
+                    "id": "48911a49-50b3-4712-be7b-06a4c33363a9",
+                    "account_id": "my-uuid",
+                    "user_id": "user-one-uuid",
+                    "type": "folder",
+                    "name": "Sub-Sub Ship Folder",
+                    "parent_id": "a3c77eb2-c688-4a34-ab81-0c4fc5126a6c",
+                    "icon": "mdi-folder",
+                    "created_at": "2020-07-25T16:04:24.000000Z",
+                    "updated_at": "2020-07-25T16:04:24.000000Z",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
