@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpSquad\FolderTree;
+namespace Gogehen\FolderTree;
 
 use Illuminate\Support\ServiceProvider;
 

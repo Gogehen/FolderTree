@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpSquad\FolderTree\Services;
+namespace Gogehen\FolderTree\Services;
 
-use PhpSquad\FolderTree\Models\Folder;
-use PhpSquad\FolderTree\Repositories\FolderRepository;
+use Gogehen\FolderTree\Models\Folder;
+use Gogehen\FolderTree\Repositories\FolderRepository;
 
 class FolderService
 {

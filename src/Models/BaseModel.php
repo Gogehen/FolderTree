@@ -1,7 +1,7 @@
 <?php
 
 
-namespace PhpSquad\FolderTree\Models;
+namespace Gogehen\FolderTree\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;

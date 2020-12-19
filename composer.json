@@ -22,12 +22,12 @@
   },
   "autoload": {
     "psr-4": {
-      "PhpSquad\\FolderTree\\": "src/"
+      "Gogehen\\FolderTree\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "PhpSquad\\FolderTree\\Tests\\": "tests/"
+      "Gogehen\\FolderTree\\Tests\\": "tests/"
     }
   },
   "extra": {

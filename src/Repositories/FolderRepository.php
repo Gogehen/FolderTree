@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpSquad\FolderTree\Repositories;
+namespace Gogehen\FolderTree\Repositories;
 
-use PhpSquad\FolderTree\Models\Folder;
+use Gogehen\FolderTree\Models\Folder;
 
 class FolderRepository
 {

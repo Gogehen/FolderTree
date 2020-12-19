@@ -1,11 +1,11 @@
 <?php
 
-namespace PhpSquad\FolderTree\Tests\Integration;
+namespace Gogehen\FolderTree\Tests\Integration;
 
+use Gogehen\FolderTree\Repositories\FolderRepository;
+use Gogehen\FolderTree\Services\FolderService;
+use Gogehen\FolderTree\Tests\TestDatabase;
 use Illuminate\Database\Capsule\Manager;
-use PhpSquad\FolderTree\Repositories\FolderRepository;
-use PhpSquad\FolderTree\Services\FolderService;
-use PhpSquad\FolderTree\Tests\TestDatabase;
 use PHPUnit\Framework\TestCase;
 
 

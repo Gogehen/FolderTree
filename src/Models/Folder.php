@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpSquad\FolderTree\Models;
+namespace Gogehen\FolderTree\Models;
 
 class Folder extends BaseModel
 {

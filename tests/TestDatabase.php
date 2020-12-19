@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpSquad\FolderTree\Tests;
+namespace Gogehen\FolderTree\Tests;
 
 use Illuminate\Database\Capsule\Manager;
 
