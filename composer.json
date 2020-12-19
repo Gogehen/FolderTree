@@ -33,7 +33,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "PhpSquad\\NavDirectory\\ProjectManagerProvider"
+        "Gogehen\\FolderTree\\ProjectManagerProvider"
       ]
     }
   }
